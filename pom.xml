@@ -55,11 +55,12 @@
 
     </dependencies>
 
-    <distributionManagement>
-        <repository>
-            <id>myMavenRepo.write</id>
-            <url>https://mymavenrepo.com/repo/9Q8JoRpymi4UGK8HzbVq/</url>
-        </repository>
-    </distributionManagement>
+<distributionManagement>
+    <repository>
+        <id>central</id>
+        <name>7dfa37aefaae-releases</name>
+        <url>http://119.81.222.69:8081/artifactory/Jenkins-integration</url>
+    </repository>
+</distributionManagement>
 
 </project>
