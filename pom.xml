@@ -58,7 +58,6 @@
 <distributionManagement>
     <repository>
         <id>jfroglung</id>
-        <name>Jenkins-integration</name>
         <url>http://119.81.222.69:8081/artifactory/Jenkins-integration</url>
     </repository>
 </distributionManagement>
