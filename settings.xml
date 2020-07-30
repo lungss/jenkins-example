@@ -1,9 +1,0 @@
-<settings>
-  <servers>
-    <server>
-      <id>Jenkins-integration</id>
-      <username>admin</username>
-      <password>go1utama</password>
-    </server>
-  </servers>
-</settings>
