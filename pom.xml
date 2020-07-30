@@ -56,10 +56,11 @@
     </dependencies>
 
 <distributionManagement>
-    <repository>
-        <id>Jenkins-integration</id>
-        <url>http://119.81.222.69:8081/artifactory/Jenkins-integration</url>
-    </repository>
+    <snapshotRepository>
+        <id>snapshots</id>
+        <name>6df066516e57-snapshots</name>
+        <url>http://161.202.190.34:8081/artifactory/libs-snapshot-local</url>
+    </snapshotRepository>
 </distributionManagement>
 
 </project>
