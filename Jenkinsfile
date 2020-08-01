@@ -71,11 +71,11 @@ pipeline {
 */
         stage ('Jira') {
             steps {
-                updateJiraExtContext {
-                    issueStrategyContext {
+                updateJiraExt {
+                    issueStrategy {
                         singleIssue('MYD-2')
                     }
-                    jiraOperationsContext {
+                    jiraOperations {
                         transition('Deploy to Test');
                         addComment('You went through a Jenkins build!', true)
                         addLabel('Cool stuff')
