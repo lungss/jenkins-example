@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     stages {
-
+/*
         stage ('Artifactory configuration') {
             steps {
                 rtServer (
@@ -26,7 +26,7 @@ pipeline {
                 )
             }
         }
-
+*/
         stage('SonarQube Code Analysis') {
 
           steps {
