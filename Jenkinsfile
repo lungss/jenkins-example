@@ -1,4 +1,3 @@
-def email-to
 pipeline {
     agent any
 
@@ -73,7 +72,7 @@ pipeline {
 */
         stage ('Mail') {
             steps {
-                mail bcc: '', body: 'hello jenkins', cc: '', from: '', replyTo: '', subject: 'Test from Jenkins', to: '${env.email-to}'
+                mail bcc: '', body: 'hello jenkins', cc: '', from: '', replyTo: '', subject: 'Test from Jenkins', to: "${env.email-to}"
             }
         }
         
