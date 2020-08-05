@@ -72,7 +72,7 @@ pipeline {
 */
         stage ('Mail') {
             steps {
-                mail bcc: '', body: 'hello jenkins', cc: '', from: '', replyTo: '', subject: 'Test from Jenkins', to: 'lungss@my.ibm.com'
+                mail bcc: '', body: 'hello jenkins', cc: '', from: '', replyTo: '', subject: 'Test from Jenkins', to: '${env.email-to}'
             }
         }
         
