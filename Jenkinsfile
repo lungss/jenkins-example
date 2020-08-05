@@ -1,3 +1,4 @@
+def email-to
 pipeline {
     agent any
 
