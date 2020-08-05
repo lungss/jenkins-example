@@ -69,19 +69,9 @@ pipeline {
             }
         }
 */
-        stage ('Jira') {
+        stage ('Mail') {
             steps {
-                updateJiraExt {
-                    issueStrategy {
-                        singleIssue('MYD-2')
-                    }
-                    jiraOperations {
-                        transition('Deploy to Test');
-                        addComment('You went through a Jenkins build!', true)
-                        addLabel('Cool stuff')
-                        updateField('customField_123', 'Hello World')
-                    }
-                }
+                mail bcc: '', body: 'hello jenkins', cc: '', from: '', replyTo: '', subject: 'Test from Jenkins', to: 'lungss@my.ibm.com'
             }
         }
         
