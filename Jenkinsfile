@@ -2,6 +2,7 @@ pipeline {
     agent any
 
     stages {
+        // dl test
 /*
         stage ('Artifactory configuration') {
             steps {
